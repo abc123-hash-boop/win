@@ -5,7 +5,7 @@ services:
     container_name: wg-easy
     environment:
       - WG_HOST=172.187.176.69 # 您的内网 IP 地址
-      - PASSWORD=123456 # 您的弱密码
+      - PASSWORD_HASH=$$2a$$12$$31H.ZEl74tEF98shuIWWxe2PTsljr3vEMRfU7HL8dPvNJTImcUgRq
       - WG_PORT=20000 # WireGuard 端口
       - WG_DEFAULT_DNS=1.1.1.1 # 可选：设置默认 DNS 服务器
       - WG_ALLOWED_IPS=0.0.0.0/0, ::/0 # 可选：允许所有 IP 地址
